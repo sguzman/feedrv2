@@ -1,0 +1,18 @@
+{
+  "$id": "file://schemas/data.schema.json",
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Initial data seed (TOML)",
+  "description": "Top-level keys are table names; each is an array of row objects.",
+  "type": "object",
+
+  "additionalProperties": {
+    "type": "array",
+    "minItems": 0,
+    "items": {
+      "type": "object",
+      "additionalProperties": {
+        "type": ["string", "integer", "number", "boolean", "null"]
+      }
+    }
+  }
+}

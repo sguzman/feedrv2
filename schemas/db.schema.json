@@ -1,0 +1,37 @@
+{
+  "id": "file://schemas/db.schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Database config (db-level only)",
+  "type": "object",
+  "properties": {
+    "database": {
+      "type": "object",
+      "description": "Database-level settings only (no tables, columns, indexes, or triggers).",
+      "properties": {
+        "dialect": {
+          "type": "string",
+          "enum": ["sqlite"],
+          "description": "Only sqlite is supported for now."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Logical name for the database or filename (e.g., feeds.db)."
+        },
+        "echo": {
+          "type": "boolean",
+          "description": "Enable SQL logging in your app/framework."
+        },
+        "timeout_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "SQLite busy timeout in milliseconds."
+        }
+      },
+      "required": ["dialect", "name"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["database"],
+  "additionalProperties": false
+}

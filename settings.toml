@@ -1,0 +1,11 @@
+[db]
+dir = "./data/db/feeds"
+
+[data]
+path = "."
+
+[log]
+level = "debug"
+
+[app]
+mode = "dev"

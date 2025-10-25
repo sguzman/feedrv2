@@ -1,0 +1,16 @@
+table_name = "users"
+
+[id]
+type = "integer"
+primary = true
+unique = true
+nullable = false
+autoincrement = true
+
+[email]
+type = "text"
+nullable = false
+
+[name]
+type = "text"
+nullable = false

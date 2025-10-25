@@ -1,0 +1,72 @@
+# Top-level metadata
+table_name = "users"
+
+[id]
+type = "int"
+primary = true
+autoincrement = true
+nullable = false
+
+[user_uuid]
+type = "uuid"
+nullable = false
+unique = true
+default = "550e8400-e29b-41d4-a716-446655440000"
+
+[email]
+type = "varchar"
+nullable = false
+unique = true
+
+[username]
+type = "varchar"
+nullable = false
+unique = true
+
+[f3wf]
+type = "int"
+
+[sjflewsi]
+type = "int"
+
+[full_name]
+type = "text"
+nullable = false
+default = "Anonymous"
+
+[status]
+type = "char"
+nullable = false
+default = "A"
+
+[balance]
+type = "decimal"
+nullable = false
+default = 0      # no precision/scale fields allowed by schema
+
+[rating]
+type = "float"
+nullable = false
+default = 0.0
+
+[avatar]
+type = "blob"
+nullable = true
+
+[created_at]
+type = "timestamp"
+nullable = false
+default = "CURRENT_TIMESTAMP"
+
+[updated_at]
+type = "timestamp"
+nullable = false
+default = "CURRENT_TIMESTAMP"
+
+[referrer_id]
+type = "int"
+nullable = true
+
+[account_id]
+type = "bigint"
+nullable = false
