@@ -1,11 +1,8 @@
 from __future__ import annotations
 
-import functools
-import logging
 import os
 import pathlib
 import re
-import tomllib
 from dataclasses import dataclass
 from typing import Any, Dict
 
@@ -31,48 +28,8 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import DeclarativeBase, mapped_column, sessionmaker
 
-# ---------- Config ----------
-# Location of project toml files
-root_dir: pathlib.Path = pathlib.Path(".")
-
-
-# Load settings.toml
-
-
-@functools.cache
-def read_toml(path: str | os.PathLike) -> Dict[str, Any]:
-    with open(path, "rb") as f:
-        return tomllib.load(f)
-
-
-@functools.cache
-def config(root: pathlib.Path = root_dir) -> Dict[str, Any]:
-    path = root / "settings.toml"
-    if not path.is_file():
-        raise FileNotFoundError("Missing settings.toml")
-    return read_toml(path)
-
-
-settings = config(root_dir)
-
-
-# ---------- Logging levels ----------
-
-
-LOG_LEVELS = {
-    "debug": logging.DEBUG,
-    "info": logging.INFO,
-    "warning": logging.WARNING,
-    "error": logging.ERROR,
-    "critical": logging.CRITICAL,
-}
-
-logging.basicConfig(
-    level=LOG_LEVELS[settings["log"]["level"]],  # root logger level
-    format="%(asctime)s %(levelname)s %(name)s: %(message)s",
-)
-
-logger = logging.getLogger(__name__)
+from src.config import config, read_toml, settings
+from src.logging import logger
 
 # ---------- Type mapping from TOML types to SQLAlchemy ----------
 TYPE_MAP = {
@@ -340,7 +297,7 @@ class DbObject:
     engine: Engine
 
 
-def init(root: str | os.PathLike = ".") -> DbObject:
+def init(root: str | os.PathLike) -> DbObject:
     cfg = config(root)
     db_dir = pathlib.Path(cfg["db"]["dir"])
 
@@ -396,5 +353,7 @@ def init(root: str | os.PathLike = ".") -> DbObject:
 
 
 if __name__ == "__main__":
+    from src.config import root_dir
+
     # Run as: python loader.py   (from inside mydb/)
     main(root_dir)
