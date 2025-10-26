@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import os
 import pathlib
 import re
@@ -29,7 +30,8 @@ from sqlalchemy import (
 from sqlalchemy.orm import DeclarativeBase, mapped_column, sessionmaker
 
 from src.config import config, read_toml, settings
-from src.logging import logger
+
+logger = logging.getLogger(__name__)
 
 # ---------- Type mapping from TOML types to SQLAlchemy ----------
 TYPE_MAP = {
