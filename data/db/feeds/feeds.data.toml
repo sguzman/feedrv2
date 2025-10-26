@@ -1,3 +1,4 @@
 
 [[links]]
 url = "https://www.govinfo.gov/rss/bills.xml"
+dialect = "rss"

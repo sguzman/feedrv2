@@ -9,3 +9,7 @@ level = "debug"
 
 [app]
 mode = "dev"
+
+[http]
+timeout = 10
+retries = 0

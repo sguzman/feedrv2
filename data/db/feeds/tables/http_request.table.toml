@@ -1,0 +1,60 @@
+table_name = "http_request"
+
+[id]
+type = "integer"
+primary = true
+autoincrement = true
+
+[timeout]
+type = "integer"
+nullable = false
+
+[url]
+type = "text"
+nullable = false
+
+[at]
+type = "datetime"
+unique = true
+nullable = false
+
+[status]
+type = "integer"
+nullable = false
+
+
+[elapsed]
+type = "integer"
+nullable = false
+
+[encoding]
+type = "text"
+nullable = false
+
+[apparent_encoding]
+type = "text"
+nullable = true
+
+[last_modified]
+type = "datetime"
+nullable = false
+
+[content_type]
+type = "text"
+nullable = false
+
+[transfer_encoding]
+type = "text"
+nullable = true
+
+[is_redirect]
+type = "bool"
+nullable = true
+
+[is_ok]
+type = "bool"
+nullable = false
+
+[reason]
+type = "text"
+nullable = false
