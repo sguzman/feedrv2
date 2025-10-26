@@ -1,0 +1,5 @@
+[database]
+dialect = "sqlite"
+name = "feeds.db"
+echo = true
+timeout_ms = 5000

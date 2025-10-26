@@ -1,0 +1,13 @@
+table_name = "links"
+
+[id]
+type = "integer"
+primary = true
+unique = true
+nullable = false
+autoincrement = true
+
+[url]
+type = "text"
+nullable = false
+unique = true

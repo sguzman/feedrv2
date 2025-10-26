@@ -1,18 +1,3 @@
 
-[[users]]
-email = "ada@example.com"
-name = "Ada"
-
-[[users]]
-email = "grace@example.com"
-name = "Grace"
-
-[[posts]]
-user_id = 1
-title = "Hello"
-body = "First post"
-
-[[posts]]
-user_id = 2
-title = "Second"
-body = "Another post"
+[[links]]
+url = "https://www.govinfo.gov/rss/bills.xml"
