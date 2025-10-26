@@ -1,0 +1,19 @@
+include = ["**/*.toml"]
+
+[[rule]]
+include = ["**/*.table.toml"]
+[rule.schema]
+path = "./schemas/table.schema.json"
+enabled = true
+
+[[rule]]
+include = ["**/*.data.toml"]
+[rule.schema]
+path = "./schemas/data.schema.json"
+enabled = true
+
+[[rule]]
+include = ["**/*.db.toml"]
+[rule.schema]
+path = "./schemas/db.schema.json"
+enabled = true
