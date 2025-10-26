@@ -1,5 +1,9 @@
+# Import file at src/db.py
+from src import db
+
+
 def main():
-    print("Hello from feedr!")
+    print(db)
 
 
 if __name__ == "__main__":

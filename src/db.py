@@ -6,6 +6,7 @@ import os
 import pathlib
 import re
 import tomllib
+from dataclasses import dataclass
 from typing import Any, Dict
 
 from sqlalchemy import (
@@ -16,6 +17,7 @@ from sqlalchemy import (
     Boolean,
     Date,
     DateTime,
+    Engine,
     Float,
     Integer,
     LargeBinary,
@@ -329,6 +331,68 @@ def main(root: str | os.PathLike = "."):
         sess.commit()
 
     engine.dispose()
+
+
+# A simple object to store and return classes, engine, session and base
+@dataclass
+class DbObject:
+    classes: Dict[str, type[Base]]
+    engine: Engine
+
+
+def init(root: str | os.PathLike = ".") -> DbObject:
+    cfg = config(root)
+    db_dir = pathlib.Path(cfg["db"]["dir"])
+
+    # 1) Config
+    db_cfg = load_db_config(db_dir)
+
+    # 1.1) Build URL
+    db_cfg = db_cfg["database"]
+    dialect: str = db_cfg["dialect"]
+    path: str = cfg["data"]["path"]
+    name: str = db_cfg["name"]
+    db_file = (pathlib.Path(path) / name).resolve()
+
+    # 1.2) If dev mode under [app], mode is on, remove database
+    app_mode = settings.get("app", {}).get("mode", "dev")
+    if app_mode == "dev" and db_file.is_file():
+        logger.info(f"App in dev mode; removing existing database at {db_file}")
+        db_file.unlink()
+
+    url = URL.create(drivername=dialect, database=str(db_file))
+
+    echo: bool = db_cfg["echo"]
+
+    # 2) Read all table files
+    tables_dir = db_dir / "tables"
+    table_files = discover_table_files(tables_dir)
+    parsed_tables_list = [parse_table_file(p) for p in table_files]
+    table_defs = {m["table"]: m for m in parsed_tables_list}
+
+    # 3) Build dynamic ORM classes
+    classes = build_class_shells(table_defs)
+    wire_columns(classes, table_defs)
+
+    # 4) Create engine and tables
+    engine = create_engine(url, echo=echo)
+    if engine.url.drivername.startswith("sqlite"):
+        event.listen(engine, "connect", _enable_sqlite_foreign_keys)
+    Base.metadata.create_all(engine)
+
+    # 5) Seed data (unchanged)
+    seeds = load_seed_data(db_dir)
+    session = sessionmaker(engine, expire_on_commit=False)
+    with session() as sess:
+        for table_name, rows in seeds.items():
+            cls = classes.get(table_name)
+            if cls is None:
+                raise ValueError(f"Seed data refers to unknown table: {table_name}")
+            sess.add_all([cls(**row) for row in rows])
+        sess.commit()
+
+    # Return a DbObject
+    return DbObject(classes=classes, engine=engine)
 
 
 if __name__ == "__main__":
