@@ -10,3 +10,8 @@ dependencies = [
     "rich>=14.2.0",
     "sqlalchemy>=2.0.44",
 ]
+
+[tool.ruff]
+line-length = 60
+target-version = "py312"
+preview = true  # opt into latest formatting behavior

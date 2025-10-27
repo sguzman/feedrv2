@@ -13,3 +13,6 @@ mode = "dev"
 [http]
 timeout = 10
 retries = 0
+
+[time]
+timezone = "America/Mexico_City"

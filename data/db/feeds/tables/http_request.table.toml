@@ -39,7 +39,7 @@ nullable = true
 type = "datetime"
 nullable = false
 
-[content_type]
+[text]
 type = "text"
 nullable = false
 
