@@ -1,4 +1,4 @@
-table_name = "http_get"
+table_name = "http_head"
 
 [id]
 type = "integer"
@@ -15,7 +15,6 @@ nullable = false
 
 [at]
 type = "datetime"
-unique = true
 nullable = false
 
 [status]

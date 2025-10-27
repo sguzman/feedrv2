@@ -15,7 +15,6 @@ nullable = false
 
 [at]
 type = "datetime"
-unique = true
 nullable = false
 
 [status]

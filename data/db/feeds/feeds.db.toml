@@ -1,5 +1,5 @@
 [database]
 dialect = "sqlite"
 name = "feeds.db"
-echo = true
+echo = false
 timeout_ms = 5000

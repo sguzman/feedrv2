@@ -36,9 +36,23 @@ Col = Union[
 
 @functools.cache
 def get_feed(url: str) -> requests.Response:
-    timeout: int = settings["http"]["timeout"]
+    timeout: int = settings["http"]["get"][
+        "timeout"
+    ]
 
     r: requests.Response = requests.get(
+        url=url, timeout=timeout
+    )
+
+    return r
+
+
+def head_feed(url: str) -> requests.Response:
+    timeout: int = settings["http"]["head"][
+        "timeout"
+    ]
+
+    r: requests.Response = requests.head(
         url=url, timeout=timeout
     )
 
@@ -62,7 +76,9 @@ def head(url: str, HttpHead: type[Base]):
     )
 
     # Http objects
-    timeout: int = settings["http"]["timeout"]
+    timeout: int = settings["http"]["head"][
+        "timeout"
+    ]
 
     last_modified: datetime.datetime = (
         datetime.datetime.strptime(
@@ -106,7 +122,9 @@ def get(url: str, HttpGet: type[Base]):
     )
 
     # Http objects
-    timeout: int = settings["http"]["timeout"]
+    timeout: int = settings["http"]["get"][
+        "timeout"
+    ]
     encoding: str = resp.encoding
     apparent_encoding: str = (
         resp.apparent_encoding
@@ -150,9 +168,11 @@ def list_rows(
     table: Type[T],
 ):
     # accept single column or a sequence of columns
-    return session.execute(
-        select(table)
-    ).scalars()
+    return list(
+        session.execute(select(table))
+        .scalars()
+        .all()
+    )
 
 
 def latest(
