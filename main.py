@@ -21,13 +21,17 @@ def main():
     cls = obj.classes
     engine = obj.engine
     Links: type[Base] = cls["links"]
-    HttpRequests: type[Base] = cls["http_request"]
+    HttpGet: type[Base] = cls["http_get"]
+    HttpHead: type[Base] = cls["http_head"]
 
     session = sessionmaker(
         engine, expire_on_commit=False
     )
     sess = session()
-    pipeline.op(Links, HttpRequests, sess)
+    while True:
+        pipeline.op(
+            Links, HttpGet, HttpHead, sess
+        )
 
 
 if __name__ == "__main__":

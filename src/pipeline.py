@@ -1,11 +1,19 @@
 import datetime
 import functools
-from typing import Any, Optional, Type, TypeVar, Union
+from typing import (
+    Any,
+    Optional,
+    Type,
+    TypeVar,
+    Union,
+)
 
 import requests
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from sqlalchemy.orm.attributes import InstrumentedAttribute
+from sqlalchemy.orm.attributes import (
+    InstrumentedAttribute,
+)
 from sqlalchemy.sql.elements import ColumnElement
 
 # Import settings
@@ -21,7 +29,9 @@ from src.logging import logger
 
 
 T = TypeVar("T")
-Col = Union[InstrumentedAttribute[Any], ColumnElement[Any]]
+Col = Union[
+    InstrumentedAttribute[Any], ColumnElement[Any]
+]
 
 
 @functools.cache
@@ -35,18 +45,72 @@ def get_feed(url: str) -> requests.Response:
     return r
 
 
-def make_req(url: str, HttpRequests: type[Base]):
-    at: datetime.datetime = datetime.datetime.now()
+def head(url: str, HttpHead: type[Base]):
+    logger.info("HEAD: %s", url)
+
+    at: datetime.datetime = (
+        datetime.datetime.now()
+    )
     resp: requests.Response = get_feed(url)
-    after: datetime.datetime = datetime.datetime.now()
+    after: datetime.datetime = (
+        datetime.datetime.now()
+    )
 
     elapsed_delta: datetime.timedelta = after - at
-    elapsed: int = int(elapsed_delta.microseconds // 1000)
+    elapsed: int = int(
+        elapsed_delta.microseconds // 1000
+    )
+
+    # Http objects
+    timeout: int = settings["http"]["timeout"]
+
+    last_modified: datetime.datetime = (
+        datetime.datetime.strptime(
+            resp.headers["last-modified"],
+            "%a, %d %b %Y %H:%M:%S %Z",
+        )
+    )
+
+    is_ok: bool = resp.ok
+    reason: str = resp.reason
+    status: int = resp.status_code
+
+    http_head = HttpHead(
+        timeout=timeout,
+        url=url,
+        at=at,
+        status=status,
+        elapsed=elapsed,
+        last_modified=last_modified,
+        is_ok=is_ok,
+        reason=reason,
+    )
+
+    return http_head
+
+
+def get(url: str, HttpGet: type[Base]):
+    logger.info("GET: %s", url)
+
+    at: datetime.datetime = (
+        datetime.datetime.now()
+    )
+    resp: requests.Response = get_feed(url)
+    after: datetime.datetime = (
+        datetime.datetime.now()
+    )
+
+    elapsed_delta: datetime.timedelta = after - at
+    elapsed: int = int(
+        elapsed_delta.microseconds // 1000
+    )
 
     # Http objects
     timeout: int = settings["http"]["timeout"]
     encoding: str = resp.encoding
-    apparent_encoding: str = resp.apparent_encoding
+    apparent_encoding: str = (
+        resp.apparent_encoding
+    )
     last_modified: datetime.datetime = (
         datetime.datetime.strptime(
             resp.headers["last-modified"],
@@ -62,7 +126,7 @@ def make_req(url: str, HttpRequests: type[Base]):
     text: str = resp.text
     status: int = resp.status_code
 
-    http_request = HttpRequests(
+    http_request = HttpGet(
         timeout=timeout,
         url=url,
         at=at,
@@ -86,7 +150,9 @@ def list_rows(
     table: Type[T],
 ):
     # accept single column or a sequence of columns
-    return session.execute(select(table)).scalars()
+    return session.execute(
+        select(table)
+    ).scalars()
 
 
 def latest(
@@ -107,7 +173,8 @@ def latest(
 
 def op(
     Links: type[Base],
-    HttpRequests: type[Base],
+    HttpGet: type[Base],
+    HttpHead: type[Base],
     session: Session,
 ):
     links = list_rows(session, Links)
@@ -116,22 +183,115 @@ def op(
         logger.info(url)
 
         # Retrieve any requests for this url
-        most_recent = latest(
+        last_get = latest(
             session,
-            HttpRequests,
-            HttpRequests.url,
+            HttpGet,
+            HttpGet.url,
             url,
-            HttpRequests.at,
+            HttpGet.at,
         )
 
-        if most_recent:
+        last_head = latest(
+            session,
+            HttpHead,
+            HttpHead.url,
+            url,
+            HttpHead.at,
+        )
+
+        both = (last_get, last_head)
+
+        if not (all(both)):
             logger.info(
-                "Most recent request at: %s", most_recent.at
+                "No http request on record. Initiating first"
+            )
+            get_req = get(url, HttpGet)
+            session.add(get_req)
+            session.commit()
+        elif (
+            both[0] is not None
+            and both[1] is None
+        ):
+            logger.info(
+                "Most recent GET at: %s",
+                last_get.at,
             )
 
-        req = make_req(url, HttpRequests)
-        session.add(req)
-        session.commit()
+            logger.info(
+                "Initiating a HEAD request for modification date"
+            )
+
+            head_req = head(url, HttpHead)
+            session.add(head_req)
+            session.commit()
+
+        elif (
+            both[0] is None
+            and both[1] is not None
+        ):
+            logger.info(
+                "Most recent HEAD at: %s",
+                last_head.at,
+            )
+
+            logger.info(
+                "Initiating a GET request after HEAD"
+            )
+
+            get_req = get(url, HttpGet)
+            session.add(get_req)
+            session.commit()
+
+        else:
+            logger.info(
+                "Both GET and HEAD requests exist"
+            )
+
+            if (
+                last_head.last_modified
+                > last_get.last_modified
+            ):
+                logger.info(
+                    "Content modified since last GET at: %s",
+                    last_get.last_modified,
+                )
+
+                logger.info(
+                    "Initiating a new GET request"
+                )
+
+                get_req = get(url, HttpGet)
+                session.add(get_req)
+                session.commit()
+
+            else:
+                logger.info(
+                    "Content not modified since last GET at: %s",
+                    last_get.last_modified,
+                )
+
+                # If the content is not modified, check for a new HEAD request
+                # But only if enough time has elapsed since the last HEAD
+                # Reference http.head.wait setting
+                wait_seconds: int = settings[
+                    "http"
+                ]["head"]["wait"]
+                now: datetime.datetime = (
+                    datetime.datetime.now()
+                )
+                elapsed_since_head: datetime.timedelta = (
+                    now - last_head.at
+                )
+                if (
+                    elapsed_since_head.total_seconds()
+                    > wait_seconds
+                ):
+                    logger.info(
+                        "Wait time exceeded since last HEAD. Initiating new HEAD request."
+                    )
+                    head_req = head(url, HttpHead)
+                    session.add(head_req)
+                    session.commit()
 
     # ----- Footnote -------
     session.close()

@@ -10,9 +10,14 @@ level = "debug"
 [app]
 mode = "dev"
 
-[http]
+[http.get]
 timeout = 10
 retries = 0
+
+[http.head]
+timeout = 5
+retries = 2
+wait = 100
 
 [time]
 timezone = "America/Mexico_City"

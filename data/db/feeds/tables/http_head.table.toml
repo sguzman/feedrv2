@@ -1,0 +1,39 @@
+table_name = "http_get"
+
+[id]
+type = "integer"
+primary = true
+autoincrement = true
+
+[timeout]
+type = "integer"
+nullable = false
+
+[url]
+type = "text"
+nullable = false
+
+[at]
+type = "datetime"
+unique = true
+nullable = false
+
+[status]
+type = "integer"
+nullable = false
+
+[elapsed]
+type = "integer"
+nullable = false
+
+[last_modified]
+type = "datetime"
+nullable = false
+
+[is_ok]
+type = "bool"
+nullable = false
+
+[reason]
+type = "text"
+nullable = false
