@@ -1,5 +1,6 @@
-import datetime
+import datetime as dt
 import functools
+from datetime import datetime
 from typing import (
     Any,
     Optional,
@@ -9,6 +10,7 @@ from typing import (
 )
 
 import requests
+from requests import Response
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.attributes import (
@@ -35,24 +37,24 @@ Col = Union[
 
 
 @functools.cache
-def get_feed(url: str) -> requests.Response:
+def get_feed(url: str) -> Response:
     timeout: int = settings["http"]["get"][
         "timeout"
     ]
 
-    r: requests.Response = requests.get(
+    r: Response = requests.get(
         url=url, timeout=timeout
     )
 
     return r
 
 
-def head_feed(url: str) -> requests.Response:
+def head_feed(url: str) -> Response:
     timeout: int = settings["http"]["head"][
         "timeout"
     ]
 
-    r: requests.Response = requests.head(
+    r: Response = requests.head(
         url=url, timeout=timeout
     )
 
@@ -62,15 +64,11 @@ def head_feed(url: str) -> requests.Response:
 def head(url: str, HttpHead: type[Base]):
     logger.info("HEAD: %s", url)
 
-    at: datetime.datetime = (
-        datetime.datetime.now()
-    )
-    resp: requests.Response = get_feed(url)
-    after: datetime.datetime = (
-        datetime.datetime.now()
-    )
+    at: datetime = datetime.now()
+    resp: Response = get_feed(url)
+    after: datetime = datetime.now()
 
-    elapsed_delta: datetime.timedelta = after - at
+    elapsed_delta: dt.timedelta = after - at
     elapsed: int = int(
         elapsed_delta.microseconds // 1000
     )
@@ -80,11 +78,9 @@ def head(url: str, HttpHead: type[Base]):
         "timeout"
     ]
 
-    last_modified: datetime.datetime = (
-        datetime.datetime.strptime(
-            resp.headers["last-modified"],
-            "%a, %d %b %Y %H:%M:%S %Z",
-        )
+    last_modified: datetime = datetime.strptime(
+        resp.headers["last-modified"],
+        "%a, %d %b %Y %H:%M:%S %Z",
     )
 
     is_ok: bool = resp.ok
@@ -108,15 +104,11 @@ def head(url: str, HttpHead: type[Base]):
 def get(url: str, HttpGet: type[Base]):
     logger.info("GET: %s", url)
 
-    at: datetime.datetime = (
-        datetime.datetime.now()
-    )
-    resp: requests.Response = get_feed(url)
-    after: datetime.datetime = (
-        datetime.datetime.now()
-    )
+    at: datetime = datetime.now()
+    resp: Response = get_feed(url)
+    after: datetime = datetime.now()
 
-    elapsed_delta: datetime.timedelta = after - at
+    elapsed_delta: dt.timedelta = after - at
     elapsed: int = int(
         elapsed_delta.microseconds // 1000
     )
@@ -125,15 +117,13 @@ def get(url: str, HttpGet: type[Base]):
     timeout: int = settings["http"]["get"][
         "timeout"
     ]
-    encoding: str = resp.encoding
+    encoding: None | str = resp.encoding
     apparent_encoding: str = (
         resp.apparent_encoding
     )
-    last_modified: datetime.datetime = (
-        datetime.datetime.strptime(
-            resp.headers["last-modified"],
-            "%a, %d %b %Y %H:%M:%S %Z",
-        )
+    last_modified: datetime = datetime.strptime(
+        resp.headers["last-modified"],
+        "%a, %d %b %Y %H:%M:%S %Z",
     )
     transfer_encoding: str = resp.headers[
         "transfer-encoding"
@@ -221,7 +211,7 @@ def op(
 
         both = (last_get, last_head)
 
-        if not (all(both)):
+        if not (any(both)):
             logger.info(
                 "No http request on record. Initiating first"
             )
@@ -296,10 +286,8 @@ def op(
                 wait_seconds: int = settings[
                     "http"
                 ]["head"]["wait"]
-                now: datetime.datetime = (
-                    datetime.datetime.now()
-                )
-                elapsed_since_head: datetime.timedelta = (
+                now: datetime = datetime.now()
+                elapsed_since_head: dt.timedelta = (
                     now - last_head.at
                 )
                 if (

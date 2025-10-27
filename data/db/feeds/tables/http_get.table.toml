@@ -21,14 +21,13 @@ nullable = false
 type = "integer"
 nullable = false
 
-
 [elapsed]
 type = "integer"
 nullable = false
 
 [encoding]
 type = "text"
-nullable = false
+nullable = true
 
 [apparent_encoding]
 type = "text"
