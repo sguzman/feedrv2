@@ -12,6 +12,6 @@ dependencies = [
 ]
 
 [tool.ruff]
-line-length = 60
+line-length = 50
 target-version = "py312"
 preview = true  # opt into latest formatting behavior
