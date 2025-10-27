@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from src import db, pipeline
 
 # Import settings
-from src.config import root_dir
+from src.config import root_dir, settings
 
 # Import DbObject from src/db.py
 from src.db import Base, DbObject
@@ -29,6 +29,15 @@ def main():
     )
     sess = session()
     while True:
+        # Sleep for 5 seconds
+        import time
+
+        logger.info(
+            "Sleeping for %d seconds",
+            settings["app"]["sleep"],
+        )
+        time.sleep(settings["app"]["sleep"])
+
         pipeline.op(
             Links, HttpGet, HttpHead, sess
         )

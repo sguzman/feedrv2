@@ -300,6 +300,14 @@ def op(
                     head_req = head(url, HttpHead)
                     session.add(head_req)
                     session.commit()
+                else:
+                    logger.info(
+                        "Wait time not exceeded: Current time: %s, Last HEAD time: %s, Elapsed seconds: %s, Wait seconds: %s",
+                        now,
+                        last_head.at,
+                        elapsed_since_head.total_seconds(),
+                        wait_seconds,
+                    )
 
     # ----- Footnote -------
     session.close()

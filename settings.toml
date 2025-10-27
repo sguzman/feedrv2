@@ -9,6 +9,7 @@ level = "debug"
 
 [app]
 mode = "dev"
+sleep = 25
 
 [http.get]
 timeout = 10
