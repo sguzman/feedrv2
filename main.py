@@ -1,7 +1,7 @@
 from sqlalchemy.orm import sessionmaker
 
 # Pipeline code
-from src import db, pipeline
+from src import db
 
 # Import settings
 from src.config import root_dir, settings
@@ -12,6 +12,7 @@ from src.db import Base, DbObject
 # Import logging
 from src.db_op import latest, list_rows
 from src.logging import logger
+from src.pipes import pipeline
 
 
 def main():

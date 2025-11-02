@@ -5,6 +5,9 @@ import functools
 # Import settings
 from src.config import settings
 
+# Import logging
+from src.logging import logger
+
 def get_feed(url: str) -> Response:
     timeout: int = settings["http"]["get"][
         "timeout"
