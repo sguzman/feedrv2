@@ -10,6 +10,7 @@ from src.config import root_dir, settings
 from src.db import Base, DbObject
 
 # Import logging
+from src.db_op import latest, list_rows
 from src.logging import logger
 
 
@@ -38,9 +39,34 @@ def main():
         )
         time.sleep(settings["app"]["sleep"])
 
-        pipeline.op(
-            Links, HttpGet, HttpHead, sess
+        sess = session()
+        # Retrieve any requests for this url
+        last_get = latest(
+            sess,
+            HttpGet,
+            HttpGet.url,
+            url,
+            HttpGet.at,
         )
+
+        last_head = latest(
+            sess,
+            HttpHead,
+            HttpHead.url,
+            url,
+            HttpHead.at,
+        )
+
+        links = list_rows(sess, Links)
+
+        for link in links:
+            url: str = link.url
+            out = pipeline.op(
+                url, last_get, last_head
+            )
+            sess.add(out, _warn=True)
+            sess.commit()
+            sess.close()
 
 
 if __name__ == "__main__":

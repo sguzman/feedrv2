@@ -353,6 +353,12 @@ def init(root: str | os.PathLike) -> DbObject:
     # Return a DbObject
     return DbObject(classes=classes, engine=engine)
 
+from src.config import root_dir
+dbo = init(root_dir)
+
+Links = dbo.classes["links"]
+HttpGet = dbo.classes["http_get"]
+HttpHead = dbo.classes["http_head"]
 
 if __name__ == "__main__":
     from src.config import root_dir
