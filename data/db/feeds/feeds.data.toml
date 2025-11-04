@@ -1759,3 +1759,94 @@ provenance = "gov.usa"
 name = "United States Supreme Court Opinions"
 subcategory = "United States Courts Opinions"
 subsubcategory = "National"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/bills-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Congressional Bills Bulk Data"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/billstatus-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Bill Status (Individual Bills)"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/billstatus-batch.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Bill Status (Batch Notification)"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/billsum-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Bill Summary (Bulk Data)"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cfr-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Code of Federal Regulations (Annual Edition)"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/ecfr-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Electronic Code of Federal Regulations (eCFR)"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/fr-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Federal Register (FR) Bulk Data"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/govman-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "United States Government Manual"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/hman-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "House Rules and Manual"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/pai-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Privacy Act Issuances"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/ppp-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Public Papers of the Presidents of the United States"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/statute-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Statutes at Large"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/comps-bulkdata.xml"
+site = "GovInfo"
+category = "Bulk Data Feeds"
+provenance = "gov.usa"
+name = "Statute Compilations"
