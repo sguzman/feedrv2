@@ -18,9 +18,17 @@ def get_feed(url: str) -> None | Response:
     
     logger.info("GET URL: %s with timeout %d", url, timeout)
 
-    r: Response = requests.get(
-        url=url, timeout=timeout
-    )
+    try:
+        r: Response = requests.get(
+            url=url, timeout=timeout
+        )
+    except requests.exceptions.ReadTimeout as e:
+        logger.error(
+            "GET request to %s failed: %s",
+            url,
+            str(e),
+        )
+        return None
     
     if not r.ok:
         logger.warning(
