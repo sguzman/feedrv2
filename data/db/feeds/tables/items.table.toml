@@ -19,7 +19,7 @@ nullable = false
 
 [link]
 type = "text"
-nullable = false
+nullable = true
 
 [published]
 type = "datetime"

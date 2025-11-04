@@ -121,7 +121,7 @@ Entry(id={entry.get("id", "N/A")}, title={entry.get("title", "N/A")}, link={entr
                     item_id=entry["id"],
                     guidislink=entry["guidislink"],
                     title=entry["title"],
-                    link=entry["link"],
+                    link=entry.get("link", None),
                     published=datetime.strptime(entry["published"], '%a, %d %b %Y %H:%M:%S %z'),
                 )
                 sess.add(item)
