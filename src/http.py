@@ -8,6 +8,7 @@ from requests import Response
 from src.config import settings
 
 # Import logging
+from src.db import Base, HttpGet, HttpHead
 from src.logging import logger
 
 
@@ -42,25 +43,44 @@ def get_feed(url: str) -> None | Response:
     return r
 
 
-def head_feed(url: str) -> Response:
+def head_feed(url: str) -> None | Response:
     timeout: int = settings["http"]["head"][
         "timeout"
     ]
 
     logger.info("HEAD URL: %s with timeout %d", url, timeout)
 
-    r: Response = requests.head(
-        url=url, timeout=timeout
-    )
+    try:
+        r: Response = requests.head(
+            url=url, timeout=timeout
+        )
+    except requests.exceptions.ReadTimeout as e:
+        logger.error(
+            "HEAD request to %s failed: %s",
+            url,
+            str(e),
+        )
+        return None
+    
+    if not r.ok:
+        logger.warning(
+            "GET request to %s returned status code %d",
+            url,
+            r.status_code,
+        )
+        
+        return None
 
     return r
 
 
-def head(url: str, HttpHead: type[Base]):
+def head(url: str, HttpHead: type[Base]) -> None | HttpHead:
     logger.info("HEAD: %s", url)
 
     at: datetime = datetime.now()
-    resp: Response = head_feed(url)
+    resp: None | Response = head_feed(url)
+    if resp is None:
+        return None
     after: datetime = datetime.now()
 
     elapsed_delta: dt.timedelta = after - at
