@@ -71,6 +71,10 @@ def main():
                 )
                 continue
             
+            if isinstance(out, HttpGet):
+                text = out.text
+                out.text = None
+
             sess.add(out)
             sess.commit()
             logger.info(
@@ -85,7 +89,6 @@ def main():
                 continue
             
             # If the output is a HttpGet, process further
-            text = out.text
             feed_obj = feedparser.parse(text)
             
             feed = Feeds(
@@ -118,10 +121,8 @@ Entry(id={entry.get("id", "N/A")}, title={entry.get("title", "N/A")}, link={entr
                     item_id=entry["id"],
                     guidislink=entry["guidislink"],
                     title=entry["title"],
-                    title_detail=entry["title_detail"]["value"],
                     link=entry["link"],
                     published=datetime.strptime(entry["published"], '%a, %d %b %Y %H:%M:%S %z'),
-                    summary=entry["summary"],
                 )
                 sess.add(item)
                 sess.commit()

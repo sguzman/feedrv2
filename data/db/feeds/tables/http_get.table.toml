@@ -37,6 +37,10 @@ nullable = true
 type = "datetime"
 nullable = false
 
+[text]
+type = "text"
+nullable = true
+
 [transfer_encoding]
 type = "text"
 nullable = true

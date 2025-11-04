@@ -8,7 +8,7 @@ autoincrement = true
 [url]
 type = "text"
 nullable = false
-unique = false
+unique = true
 
 [site]
 type = "text"
