@@ -10,6 +10,18 @@ type = "text"
 nullable = false
 unique = true
 
-[dialect]
+[site]
 type = "text"
 nullable = false
+
+[category]
+type = "text"
+nullable = false
+
+[provenance]
+type = "text"
+nullable = false
+
+[name]
+type = "text"
+nullable = true

@@ -1,4 +1,41 @@
-
 [[links]]
 url = "https://www.govinfo.gov/rss/bills.xml"
-dialect = "rss"
+site = "GovInfo"
+category = "Bills and Statutes"
+provenance = "gov.usa"
+name = "Congressional Bills"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/bills-enr.xml"
+site = "GovInfo"
+category = "Bills and Statutes"
+provenance = "gov.usa"
+name = "Congressional Bills (Enrolled)"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/plaw.xml"
+site = "GovInfo"
+category = "Bills and Statutes"
+provenance = "gov.usa"
+name = "Public and Private Laws"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/comps.xml"
+site = "GovInfo"
+category = "Bills and Statutes"
+provenance = "gov.usa"
+name = "Statute Compilations"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/statute.xml"
+site = "GovInfo"
+category = "Bills and Statutes"
+provenance = "gov.usa"
+name = "Statutes at Large"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscode.xml"
+site = "GovInfo"
+category = "Bills and Statutes"
+provenance = "gov.usa"
+name = "U.S. Code"
