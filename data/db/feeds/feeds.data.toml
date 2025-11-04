@@ -39,3 +39,81 @@ site = "GovInfo"
 category = "Bills and Statutes"
 provenance = "gov.usa"
 name = "U.S. Code"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/budget.xml"
+site = "GovInfo"
+category = "Budget and Presidential Materials"
+provenance = "gov.usa"
+name = "Budget of the U.S. Government"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/dcpd.xml"
+site = "GovInfo"
+category = "Budget and Presidential Materials"
+provenance = "gov.usa"
+name = "Compilation of Presidential Documents"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/erp.xml"
+site = "GovInfo"
+category = "Budget and Presidential Materials"
+provenance = "gov.usa"
+name = "Economic Report of the President"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/ppp.xml"
+site = "GovInfo"
+category = "Budget and Presidential Materials"
+provenance = "gov.usa"
+name = "Public Papers of the Presidents"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cprt.xml"
+site = "GovInfo"
+category = "Congressional Committee Materials"
+provenance = "gov.usa"
+name = "Congressional Committee Prints"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cdoc.xml"
+site = "GovInfo"
+category = "Congressional Committee Materials"
+provenance = "gov.usa"
+name = "Congressional Documents"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/chrg.xml"
+site = "GovInfo"
+category = "Congressional Committee Materials"
+provenance = "gov.usa"
+name = "Congressional Hearings"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/crpt.xml"
+site = "GovInfo"
+category = "Congressional Committee Materials"
+provenance = "gov.usa"
+name = "Congressional Reports"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/serialset.xml"
+site = "GovInfo"
+category = "Congressional Committee Materials"
+provenance = "gov.usa"
+name = "Congressional Serial Set"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cmr.xml"
+site = "GovInfo"
+category = "Congressional Committee Materials"
+provenance = "gov.usa"
+name = "Congressionally Mandated Reports"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/econi.xml"
+site = "GovInfo"
+category = "Congressional Committee Materials"
+provenance = "gov.usa"
+name = "Economic Indicators"
+
