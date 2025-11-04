@@ -354,11 +354,14 @@ def init(root: str | os.PathLike) -> DbObject:
     return DbObject(classes=classes, engine=engine)
 
 from src.config import root_dir
+
 db_object = init(root_dir)
 
 Links = db_object.classes["links"]
 HttpGet = db_object.classes["http_get"]
 HttpHead = db_object.classes["http_head"]
+Feeds = db_object.classes["feeds"]
+Items = db_object.classes["items"]
 
 engine = db_object.engine
 

@@ -1,0 +1,46 @@
+table_name = "items"
+
+[id]
+type = "integer"
+primary = true
+autoincrement = true
+
+[title]
+type = "text"
+nullable = false
+
+[title_detail]
+type = "text"
+nullable = false
+
+[links]
+type = "text"
+nullable = false
+
+[subtitle]
+type = "text"
+nullable = false
+
+[subtitle_detail]
+type = "text"
+nullable = false
+
+[language]
+type = "text"
+nullable = false
+
+[image]
+type = "text"
+nullable = false
+
+[updated]
+type = "datetime"
+nullable = false
+
+[ttl]
+type = "integer"
+nullable = false
+
+[rights]
+type = "text"
+nullable = false

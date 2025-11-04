@@ -10,6 +10,7 @@ from src.config import settings
 # Import logging
 from src.logging import logger
 
+
 def get_feed(url: str) -> Response:
     timeout: int = settings["http"]["get"][
         "timeout"
@@ -42,7 +43,7 @@ def head(url: str, HttpHead: type[Base]):
     logger.info("HEAD: %s", url)
 
     at: datetime = datetime.now()
-    resp: Response = get_feed(url)
+    resp: Response = head_feed(url)
     after: datetime = datetime.now()
 
     elapsed_delta: dt.timedelta = after - at
@@ -76,7 +77,21 @@ def head(url: str, HttpHead: type[Base]):
     )
     
     # Log created HttpHead object
-    logger.info("Created HttpHead object: %s", http_head)
+    # Create log string
+    # Log timeout, url, at, status, elapsed, last_modified, is_ok, reason
+    log_str: str = f'''
+    HttpHead object: {http_head}
+    timeout: {timeout}
+    url: {url}
+    at: {at}
+    status: {status}
+    elapsed: {elapsed}
+    last_modified: {last_modified}
+    is_ok: {is_ok}
+    reason: {reason}
+    '''
+
+    logger.info("Created HttpHead object: %s", log_str)
 
     return http_head
 
@@ -131,6 +146,20 @@ def get(url: str, HttpGet: type[Base]):
     )
     
     # Log created HttpGet object
-    logger.info("Created HttpGet object: %s", http_request)
+    # Create log string
+    # Log timeout, url, at, status, elapsed, last_modified, is_ok, reason
+    log_str: str = f'''
+    HttpGet object: {http_request}
+    timeout: {timeout}
+    url: {url}
+    at: {at}
+    status: {status}
+    elapsed: {elapsed}
+    last_modified: {last_modified}
+    is_ok: {is_ok}
+    reason: {reason}
+    '''
+
+    logger.info("Created HttpHead object: %s", log_str)
 
     return http_request

@@ -1,19 +1,21 @@
+from sys import version
+
+import feedparser
 from sqlalchemy.orm import sessionmaker
 
 # Pipeline code
 from src import db
-
-# Import settings
-from src.pipes import http
-
 from src.config import settings
 
 # Import DbObject from src/db.py
-from src.db import Links, HttpGet, HttpHead, engine, db_object
+from src.db import Feeds, HttpGet, HttpHead, Items, Links, db_object, engine
 
 # Import logging
 from src.db_op import latest, list_rows
 from src.logging import logger
+
+# Import settings
+from src.pipes import http
 
 
 def main():
@@ -61,13 +63,71 @@ def main():
                 url, last_get, last_head
             )
             
-            if out is not None:
-                sess.add(out)
+            if out is None:
+                logger.info(
+                    "No new db object to add for url: %s", url
+                )
+                continue
+            
+            sess.add(out)
+            sess.commit()
+            logger.info(
+                "Added new db object: %s", out
+            )
+            
+            # If the output is a HttpHead, log and continue
+            if isinstance(out, HttpHead):
+                logger.info(
+                    "Output is HttpHead, continuing to next link: %s", url
+                )
+                continue
+            
+            # If the output is a HttpGet, process further
+            text = out.text
+            feed_obj = feedparser.parse(text)
+            
+            feed = Feeds(
+                bozo=feed_obj.bozo,
+                num_feeds=len(feed_obj.entries),
+                encoding=feed_obj.encoding,
+                version=feed_obj.version
+            )
+            
+            sess.add(feed)
+            sess.commit()
+            
+            # Log string for feed
+            feed_log = f'''
+Feed(id={feed.id}, bozo={feed.bozo}, num_feeds={feed.num_feeds}, encoding={feed.encoding}, version={feed.version})
+            '''
+            logger.info(
+                "Added new feed: %s", feed_log
+            )
+            
+            for entry in feed_obj.entries:
+                # Log string for entry
+                entry_log = f'''
+Entry(id={entry.get("id", "N/A")}, title={entry.get("title", "N/A")}, link={entry.get("link", "N/A")}, published={entry.get("published", "N/A")})
+                '''
+                logger.info(
+                    "New entry: %s", entry_log
+                )
+                item = Items(
+                    id=entry["id"],
+                    title=entry["title"],
+                    link=entry["link"],
+                    published=entry["published"],
+                    summary=entry["summary"],
+                    feed_id=feed.id
+                )
+                sess.add(item)
                 sess.commit()
                 logger.info(
-                    "Added new db object: %s", out
+                    "Added new item: %s", item
                 )
-            sess.close()
+                
+            
+        sess.close()
 
         time.sleep(settings["app"]["sleep"])
 

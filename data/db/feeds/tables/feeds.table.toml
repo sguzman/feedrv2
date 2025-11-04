@@ -1,0 +1,22 @@
+table_name = "feeds"
+
+[id]
+type = "integer"
+primary = true
+autoincrement = true
+
+[bozo]
+type = "bool"
+nullable = false
+
+[num_feeds]
+type = "integer"
+nullable = false
+
+[encoding]
+type = "text"
+nullable = false
+
+[version]
+type = "text"
+nullable = false
