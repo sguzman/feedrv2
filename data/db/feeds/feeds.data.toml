@@ -272,11 +272,1490 @@ provenance = "gov.usa"
 name = "United States Reports"
 subcategory = "Supreme Court of the United States"
 
+
 [[links]]
 url = "https://www.govinfo.gov/rss/uscourts-alnd.xml"
 site = "GovInfo"
 category = "Judicial Publications"
-provenance = "gov.usa"
-name = "United States Courts - Northern District of Alabama"
+provenance = "gov.usa.alabama"
+name = "District Court Northern District of Alabama"
 subcategory = "United States Courts Opinions"
 subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-alsd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.alabama"
+name = "District Court Southern District of Alabama"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-almd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.alabama"
+name = "District Court Middle District of Alabama"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-akd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.alaska"
+name = "District Court District of Alaska"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-azd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.arizona"
+name = "District Court District of Arizona"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ared.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.arkansas"
+name = "District Court Eastern District of Arkansas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-caed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.california"
+name = "District Court Eastern District of California"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-cand.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.california"
+name = "District Court Northern District of California"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-casd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.california"
+name = "District Court Southern District of California"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-cod.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.colorado"
+name = "District Court District of Colorado"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ctd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.connecticut"
+name = "District Court District of Connecticut"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-dcd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.columbia"
+name = "District Court District of Columbia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ded.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.delaware"
+name = "District Court District of Delaware"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-flsd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.florida"
+name = "District Court Southern District of Florida"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-flnd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.florida"
+name = "District Court Northern District of Florida"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-gamd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.georgia"
+name = "District Court Middle District of Georgia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-gand.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.georgia"
+name = "District Court Northern District of Georgia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-gud.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.guam"
+name = "District Court District of Guam"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-hid.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.hawaii"
+name = "District Court District of Hawaii"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-idd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.idaho"
+name = "District Court District of Idaho"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ilnd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.illinois"
+name = "District Court Northern District of Illinois"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ilsd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.illinois"
+name = "District Court Southern District of Illinois"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-insd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.indiana"
+name = "District Court Southern District of Indiana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-iand.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.iowa"
+name = "District Court Northern District of Iowa"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ksd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.kansas"
+name = "District Court District of Kansas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-kyed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.kentucky"
+name = "District Court Eastern District of Kentucky"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-kywd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.kentucky"
+name = "District Court Western District of Kentucky"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-laed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.louisiana"
+name = "District Court Eastern District of Louisiana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-lamd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.louisiana"
+name = "District Court Middle District of Louisiana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-med.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.maine"
+name = "District Court District of Maine"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mdd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.maryland"
+name = "District Court District of Maryland"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mad.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.massachusetts"
+name = "District Court District of Massachusetts"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mied.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.michigan"
+name = "District Court Eastern District of Michigan"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-miwd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.michigan"
+name = "District Court Western District of Michigan"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mnd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.minnesota"
+name = "District Court District of Minnesota"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-moed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.missouri"
+name = "District Court Eastern District of Missouri"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mowd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.missouri"
+name = "District Court Western District of Missouri"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mtd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.montana"
+name = "District Court District of Montana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ned.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.nebraska"
+name = "District Court District of Nebraska"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nhd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.hampshire"
+name = "District Court District of New Hampshire"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-njd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.jersey"
+name = "District Court District of New Jersey"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nmd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.mexico"
+name = "District Court District of New Mexico"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nyed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.york"
+name = "District Court Eastern District of New York"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nynd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.york"
+name = "District Court Northern District of New York"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ncmd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.carolina"
+name = "District Court Middle District of North Carolina"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ncwd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.carolina"
+name = "District Court Western District of North Carolina"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ndd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.dakota"
+name = "District Court District of North Dakota"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nmid.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.islands"
+name = "District Court District of Northern Mariana Islands"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ohnd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.ohio"
+name = "District Court Northern District of Ohio"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ohsd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.ohio"
+name = "District Court Southern District of Ohio"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-oked.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.oklahoma"
+name = "District Court Eastern District of Oklahoma"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-okwd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.oklahoma"
+name = "District Court Western District of Oklahoma"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ord.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.oregon"
+name = "District Court District of Oregon"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-paed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.pennsylvania"
+name = "District Court Eastern District of Pennsylvania"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-pamd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.pennsylvania"
+name = "District Court Middle District of Pennsylvania"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-pawd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.pennsylvania"
+name = "District Court Western District of Pennsylvania"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-prd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.rico"
+name = "District Court District of Puerto Rico"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-rid.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.island"
+name = "District Court District of Rhode Island"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-sdd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.dakota"
+name = "District Court District of South Dakota"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-tned.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.tennessee"
+name = "District Court Eastern District of Tennessee"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-tnwd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.tennessee"
+name = "District Court Western District of Tennessee"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-tnmd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.tennessee"
+name = "District Court Middle District of Tennessee"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-txed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.texas"
+name = "District Court Eastern District of Texas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-txnd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.texas"
+name = "District Court Northern District of Texas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-txsd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.texas"
+name = "District Court Southern District of Texas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-txwd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.texas"
+name = "District Court Western District of Texas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-utd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.utah"
+name = "District Court District of Utah"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-vid.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.islands"
+name = "District Court of the Virgin Islands"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-vtd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.vermont"
+name = "District Court District of Vermont"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-waed.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.washington"
+name = "District Court Eastern District of Washington"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wiwd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.wisconsin"
+name = "District Court Western District of Wisconsin"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wvnd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.virginia"
+name = "District Court Northern District of West Virginia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wyd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.wyoming"
+name = "District Court District of Wyoming"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
+
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca1.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the First Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca2.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Second Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca3.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Third Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca4.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Fourth Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca5.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Fifth Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca6.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Sixth Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca7.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Seventh Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca8.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Eighth Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca9.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Ninth Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca10.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Tenth Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca11.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Eleventh Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-cadc.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the District of Columbia Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ca13.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.circuit"
+name = "Court of Appeals for the Federal Circuit"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Appellate"
+
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-almb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.alabama"
+name = "Bankruptcy Court Middle District of Alabama"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-alnb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.alabama"
+name = "Bankruptcy Court Northern District of Alabama"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-alsb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.alabama"
+name = "Bankruptcy Court Southern District of Alabama"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-akb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.alaska"
+name = "Bankruptcy Court District of Alaska"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-areb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.arkansas"
+name = "Bankruptcy Court Eastern District of Arkansas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-arwb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.arkansas"
+name = "Bankruptcy Court Western District of Arkansas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-azb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.arizona"
+name = "Bankruptcy Court District of Arizona"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-caeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.california"
+name = "Bankruptcy Court Eastern District of California"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-canb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.california"
+name = "Bankruptcy Court Northern District of California"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-cacb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.california"
+name = "Bankruptcy Court Central District of California"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-cob.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.colorado"
+name = "Bankruptcy Court District of Colorado"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-dcb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.columbia"
+name = "Bankruptcy Court District of Columbia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ctb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.connecticut"
+name = "Bankruptcy Court District of Connecticut"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-deb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.delaware"
+name = "Bankruptcy Court District of Delaware"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-flsb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.florida"
+name = "Bankruptcy Court Southern District of Florida"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-flmb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.florida"
+name = "Bankruptcy Court Middle District of Florida"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ganb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.georgia"
+name = "Bankruptcy Court Northern District of Georgia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-gamb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.georgia"
+name = "Bankruptcy Court Middle District of Georgia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-hib.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.hawaii"
+name = "Bankruptcy Court District of Hawaii"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ilnb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.illinois"
+name = "Bankruptcy Court Northern District of Illinois"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ilsb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.illinois"
+name = "Bankruptcy Court Southern District of Illinois"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ilcb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.illinois"
+name = "Bankruptcy Court Central District of Illinois"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-insb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.indiana"
+name = "Bankruptcy Court Southern District of Indiana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ianb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.iowa"
+name = "Bankruptcy Court Northern District of Iowa"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-kyeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.kentucky"
+name = "Bankruptcy Court Eastern District of Kentucky"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-kywb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.kentucky"
+name = "Bankruptcy Court Western District of Kentucky"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-laeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.louisiana"
+name = "Bankruptcy Court Eastern District of Louisiana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-lawb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.louisiana"
+name = "Bankruptcy Court Western District of Louisiana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-lamb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.louisiana"
+name = "Bankruptcy Court Middle District of Louisiana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-meb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.maine"
+name = "Bankruptcy Court District of Maine"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mdb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.maryland"
+name = "Bankruptcy Court District of Maryland"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mab.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.massachusetts"
+name = "Bankruptcy Court District of Massachusetts"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-miwb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.michigan"
+name = "Bankruptcy Court Western District of Michigan"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mnb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.minnesota"
+name = "Bankruptcy Court District of Minnesota"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-msnb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.mississippi"
+name = "Bankruptcy Court Northern District of Mississippi"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-moeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.missouri"
+name = "Bankruptcy Court Eastern District of Missouri"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mowb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.missouri"
+name = "Bankruptcy Court Western District of Missouri"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-mtb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.montana"
+name = "Bankruptcy Court District of Montana"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-neb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.nebraska"
+name = "Bankruptcy Court District of Nebraska"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nvb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.nevada"
+name = "Bankruptcy Court District of Nevada"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nhb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.hampshire"
+name = "Bankruptcy Court District of New Hampshire"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-njb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.jersey"
+name = "Bankruptcy Court District of New Jersey"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nmb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.mexico"
+name = "Bankruptcy Court District of New Mexico"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nyeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.york"
+name = "Bankruptcy Court Eastern District of New York"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nynb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.york"
+name = "Bankruptcy Court Northern District of New York"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nysb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.york"
+name = "Bankruptcy Court Southern District of New York"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nywb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.york"
+name = "Bankruptcy Court Western District of New York"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-nceb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.carolina"
+name = "Bankruptcy Court Eastern District of North Carolina"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ncwb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.carolina"
+name = "Bankruptcy Court Western District of North Carolina"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ndb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.dakota"
+name = "Bankruptcy Court District of North Dakota"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ohnb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.ohio"
+name = "Bankruptcy Court Northern District of Ohio"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-ohsb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.ohio"
+name = "Bankruptcy Court Southern District of Ohio"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-okeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.oklahoma"
+name = "Bankruptcy Court Eastern District of Oklahoma"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-oknb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.oklahoma"
+name = "Bankruptcy Court Northern District of Oklahoma"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-okwb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.oklahoma"
+name = "Bankruptcy Court Western District of Oklahoma"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-orb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.oregon"
+name = "Bankruptcy Court District of Oregon"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-paeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.pennsylvania"
+name = "Bankruptcy Court Eastern District of Pennsylvania"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-pamb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.pennsylvania"
+name = "Bankruptcy Court Middle District of Pennsylvania"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-pawb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.pennsylvania"
+name = "Bankruptcy Court Western District of Pennsylvania"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-prb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.rico"
+name = "Bankruptcy Court District of Peurto Rico"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-rib.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.island"
+name = "Bankruptcy Court District of Rhode Island"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-scb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.carolina"
+name = "Bankruptcy Court District of South Carolina"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-sdb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.dakota"
+name = "Bankruptcy Court District of South Dakota"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-tneb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.tennessee"
+name = "Bankruptcy Court Eastern District of Tennessee"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-tnmb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.tennessee"
+name = "Bankruptcy Court Middle District of Tennessee"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-txsb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.texas"
+name = "Bankruptcy Court Southern District of Texas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-txwb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.texas"
+name = "Bankruptcy Court Western District of Texas"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-vawb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.virginia"
+name = "Bankruptcy Court Western District of Virginia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-vib.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.islands"
+name = "Bankruptcy Court District of the Virgin Islands"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-waeb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.washington"
+name = "Bankruptcy Court Eastern District of Washington"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wawb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.washington"
+name = "Bankruptcy Court Western District of Washington"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wvnb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.virginia"
+name = "Bankruptcy Court Northern District of West Virginia"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wieb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.wisconsin"
+name = "Bankruptcy Court Eastern District of Wisconsin"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wiwb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.wisconsin"
+name = "Bankruptcy Court Western District of Wisconsin"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-wyb.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa.wyoming"
+name = "Bankruptcy Court District of Wyoming"
+subcategory = "United States Courts Opinions"
+subsubcategory = "Bankruptcy"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-jpml.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa"
+name = "Judicial Panel on Multidistrict Litigation"
+subcategory = "United States Courts Opinions"
+subsubcategory = "National"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-cit.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa"
+name = "United States Court of International Trade"
+subcategory = "United States Courts Opinions"
+subsubcategory = "National"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-cofc.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa"
+name = "United States Court of Federal Claims"
+subcategory = "United States Courts Opinions"
+subsubcategory = "National"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/usreports.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa"
+name = "United States Supreme Court Opinions"
+subcategory = "United States Courts Opinions"
+subsubcategory = "National"
