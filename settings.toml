@@ -8,7 +8,7 @@ path = "."
 level = "debug"
 
 [app]
-mode = "dev"
+mode = "prod"
 sleep = 25
 
 [http.get]
