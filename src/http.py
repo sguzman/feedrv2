@@ -1,6 +1,8 @@
+import datetime as dt
+from datetime import datetime
+
 import requests
 from requests import Response
-import functools
 
 # Import settings
 from src.config import settings
@@ -12,6 +14,8 @@ def get_feed(url: str) -> Response:
     timeout: int = settings["http"]["get"][
         "timeout"
     ]
+    
+    logger.info("GET URL: %s with timeout %d", url, timeout)
 
     r: Response = requests.get(
         url=url, timeout=timeout
@@ -24,6 +28,8 @@ def head_feed(url: str) -> Response:
     timeout: int = settings["http"]["head"][
         "timeout"
     ]
+
+    logger.info("HEAD URL: %s with timeout %d", url, timeout)
 
     r: Response = requests.head(
         url=url, timeout=timeout
@@ -68,6 +74,9 @@ def head(url: str, HttpHead: type[Base]):
         is_ok=is_ok,
         reason=reason,
     )
+    
+    # Log created HttpHead object
+    logger.info("Created HttpHead object: %s", http_head)
 
     return http_head
 
@@ -120,5 +129,8 @@ def get(url: str, HttpGet: type[Base]):
         is_ok=is_ok,
         reason=reason,
     )
+    
+    # Log created HttpGet object
+    logger.info("Created HttpGet object: %s", http_request)
 
     return http_request
