@@ -1,3 +1,5 @@
+import datetime
+from datetime import datetime
 from sys import version
 
 import feedparser
@@ -113,12 +115,13 @@ Entry(id={entry.get("id", "N/A")}, title={entry.get("title", "N/A")}, link={entr
                     "New entry: %s", entry_log
                 )
                 item = Items(
-                    id=entry["id"],
+                    item_id=entry["id"],
+                    guidislink=entry["guidislink"],
                     title=entry["title"],
+                    title_detail=entry["title_detail"]["value"],
                     link=entry["link"],
-                    published=entry["published"],
+                    published=datetime.strptime(entry["published"], '%a, %d %b %Y %H:%M:%S %z'),
                     summary=entry["summary"],
-                    feed_id=feed.id
                 )
                 sess.add(item)
                 sess.commit()

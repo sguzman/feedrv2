@@ -5,6 +5,14 @@ type = "integer"
 primary = true
 autoincrement = true
 
+[item_id]
+type = "text"
+nullable = false
+
+[guidislink]
+type = "bool"
+nullable = false
+
 [title]
 type = "text"
 nullable = false
@@ -13,34 +21,14 @@ nullable = false
 type = "text"
 nullable = false
 
-[links]
+[link]
 type = "text"
 nullable = false
 
-[subtitle]
-type = "text"
-nullable = false
-
-[subtitle_detail]
-type = "text"
-nullable = false
-
-[language]
-type = "text"
-nullable = false
-
-[image]
-type = "text"
-nullable = false
-
-[updated]
+[published]
 type = "datetime"
 nullable = false
 
-[ttl]
-type = "integer"
-nullable = false
-
-[rights]
+[summary]
 type = "text"
 nullable = false
