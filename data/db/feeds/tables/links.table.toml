@@ -29,3 +29,7 @@ nullable = true
 [subcategory]
 type = "text"
 nullable = true
+
+[subsubcategory]
+type = "text"
+nullable = true

@@ -263,3 +263,20 @@ site = "GovInfo"
 category = "Regulatory Information"
 provenance = "gov.usa"
 name = "Privacy Act Issuances"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/usreports.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa"
+name = "United States Reports"
+subcategory = "Supreme Court of the United States"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/uscourts-alnd.xml"
+site = "GovInfo"
+category = "Judicial Publications"
+provenance = "gov.usa"
+name = "United States Courts - Northern District of Alabama"
+subcategory = "United States Courts Opinions"
+subsubcategory = "District"
