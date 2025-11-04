@@ -117,3 +117,114 @@ category = "Congressional Committee Materials"
 provenance = "gov.usa"
 name = "Economic Indicators"
 
+[[links]]
+url = "https://www.govinfo.gov/rss/cdoc.xml"
+site = "GovInfo"
+category = "Congressional Rules and Procedures"
+provenance = "gov.usa"
+name = "Congressional Documents"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/hman.xml"
+site = "GovInfo"
+category = "Congressional Rules and Procedures"
+provenance = "gov.usa"
+name = "House Rules and Manual"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/sman.xml"
+site = "GovInfo"
+category = "Congressional Rules and Procedures"
+provenance = "gov.usa"
+name = "Senate Manual"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cdir.xml"
+site = "GovInfo"
+category = "Directories of Organizations and Officials"
+provenance = "gov.usa"
+name = "Congressional Directory"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/govman.xml"
+site = "GovInfo"
+category = "Directories of Organizations and Officials"
+provenance = "gov.usa"
+name = "United States Government Manual"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/gpo-fcc.xml"
+site = "GovInfo"
+category = "Executive Agency Publications"
+provenance = "gov.usa"
+name = "Federal Communications Commission Record"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/gaoreports.xml"
+site = "GovInfo"
+category = "Legislative Agency Publications"
+provenance = "gov.usa"
+name = "GAO Reports and Comptroller General Decisions"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cmr.xml"
+site = "GovInfo"
+category = "Legislative Agency Publications"
+provenance = "gov.usa"
+name = "Congressionally Mandated Reports"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/ccal.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "Congressional Calendar"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/crec.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "Congressional Record"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/crecb.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "Congressional Record - Bound Edition"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cri.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "Congressional Record - Index"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/serialset.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "Congressional Serial Set"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cmr.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "Congressionally Mandated Reports"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/hob.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "History of Bills"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/hjournal.xml"
+site = "GovInfo"
+category = "Proceedings of Congress and General Congressional Publications"
+provenance = "gov.usa"
+name = "Journal of the House of Representatives"
