@@ -228,3 +228,38 @@ site = "GovInfo"
 category = "Proceedings of Congress and General Congressional Publications"
 provenance = "gov.usa"
 name = "Journal of the House of Representatives"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cfr.xml"
+site = "GovInfo"
+category = "Regulatory Information"
+provenance = "gov.usa"
+name = "Code of Federal Regulations"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/cmr.xml"
+site = "GovInfo"
+category = "Regulatory Information"
+provenance = "gov.usa"
+name = "Congressionally Mandated Reports"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/fr.xml"
+site = "GovInfo"
+category = "Regulatory Information"
+provenance = "gov.usa"
+name = "Federal Register"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/lsa.xml"
+site = "GovInfo"
+category = "Regulatory Information"
+provenance = "gov.usa"
+name = "List of CFR Sections Affected"
+
+[[links]]
+url = "https://www.govinfo.gov/rss/pai.xml"
+site = "GovInfo"
+category = "Regulatory Information"
+provenance = "gov.usa"
+name = "Privacy Act Issuances"

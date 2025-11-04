@@ -25,3 +25,7 @@ nullable = false
 [name]
 type = "text"
 nullable = true
+
+[subcategory]
+type = "text"
+nullable = true
