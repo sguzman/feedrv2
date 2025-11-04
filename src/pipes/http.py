@@ -21,18 +21,6 @@ def op(
 ) -> None | Base:
     logger.info(url)
 
-    if last_get is None:
-        logger.info(
-            "Most recent HEAD at: %s",
-            last_head,
-        )
-
-        logger.info(
-            "Initiating a GET request after HEAD"
-        )
-
-        return http.get(url, HttpGet)
-
     if last_head is None:
         logger.info(
             "Most recent GET at: %s",
@@ -44,6 +32,18 @@ def op(
         )
 
         return http.head(url, HttpHead)
+    
+    if last_get is None:
+        logger.info(
+            "Most recent HEAD at: %s",
+            last_head,
+        )
+
+        logger.info(
+            "Initiating a GET request after HEAD"
+        )
+
+        return http.get(url, HttpGet)
 
     logger.info(
         "Both GET and HEAD requests exist"
