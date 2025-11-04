@@ -17,18 +17,10 @@ nullable = false
 type = "text"
 nullable = false
 
-[title_detail]
-type = "text"
-nullable = false
-
 [link]
 type = "text"
 nullable = false
 
 [published]
 type = "datetime"
-nullable = false
-
-[summary]
-type = "text"
 nullable = false

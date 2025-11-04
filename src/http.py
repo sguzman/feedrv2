@@ -11,7 +11,7 @@ from src.config import settings
 from src.logging import logger
 
 
-def get_feed(url: str) -> Response:
+def get_feed(url: str) -> None | Response:
     timeout: int = settings["http"]["get"][
         "timeout"
     ]
@@ -21,6 +21,15 @@ def get_feed(url: str) -> Response:
     r: Response = requests.get(
         url=url, timeout=timeout
     )
+    
+    if not r.ok:
+        logger.warning(
+            "GET request to %s returned status code %d",
+            url,
+            r.status_code,
+        )
+        
+        return None
 
     return r
 
@@ -96,11 +105,15 @@ def head(url: str, HttpHead: type[Base]):
     return http_head
 
 
-def get(url: str, HttpGet: type[Base]):
+def get(url: str, HttpGet: type[Base]) -> None | HttpGet:
     logger.info("GET: %s", url)
 
     at: datetime = datetime.now()
-    resp: Response = get_feed(url)
+    resp: None | Response = get_feed(url)
+
+    if resp is None:
+        return None
+    
     after: datetime = datetime.now()
 
     elapsed_delta: dt.timedelta = after - at
