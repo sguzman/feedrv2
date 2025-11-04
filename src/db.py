@@ -4,9 +4,12 @@ import logging
 import os
 import pathlib
 import re
+import sqlite3
 from dataclasses import dataclass
 from typing import Any, Dict
 
+import sqlalchemy
+import sqlalchemy.exc
 from sqlalchemy import (
     CHAR,
     JSON,
@@ -347,8 +350,16 @@ def init(root: str | os.PathLike) -> DbObject:
             cls = classes.get(table_name)
             if cls is None:
                 raise ValueError(f"Seed data refers to unknown table: {table_name}")
-            sess.add_all([cls(**row) for row in rows])
-        sess.commit()
+            try:
+                sess.add_all([cls(**row) for row in rows])
+                sess.commit()
+            except Exception as e:
+                logger.warning(
+                    "Error adding seed data to table %s: %s",
+                    table_name,
+                    str(e),
+                )
+        
 
     # Return a DbObject
     return DbObject(classes=classes, engine=engine)
