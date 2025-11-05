@@ -37,6 +37,7 @@ def main():
             "Sleeping for %d seconds",
             settings["app"]["sleep"],
         )
+        time.sleep(settings["app"]["sleep"])
         
         sess = session()
 
@@ -44,6 +45,10 @@ def main():
         links = list_rows(sess, Links)
 
         for link in links:
+            logger.info(
+                "Finished processing item, sleeping for %d seconds", settings["app"]["item"]["sleep"]
+            )
+            time.sleep(settings["app"]["item"]["sleep"])
             url: str = link.url
             # Retrieve any requests for this url
             last_get = latest(
@@ -129,16 +134,8 @@ Entry(id={entry.get("id", "N/A")}, title={entry.get("title", "N/A")}, link={entr
                 logger.info(
                     "Added new item: %s", item
                 )
-                
-            logger.info(
-                "Finished processing item, sleeping for %d seconds", settings["app"]["item"]["sleep"]
-            )
-            time.sleep(settings["app"]["item"]["sleep"])
-                
             
         sess.close()
-
-        time.sleep(settings["app"]["sleep"])
 
 
 if __name__ == "__main__":
