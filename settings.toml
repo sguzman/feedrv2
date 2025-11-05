@@ -11,6 +11,9 @@ level = "debug"
 mode = "prod"
 sleep = 25
 
+[app.item]
+sleep = 5
+
 [http.get]
 timeout = 10
 retries = 0

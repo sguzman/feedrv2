@@ -130,6 +130,11 @@ Entry(id={entry.get("id", "N/A")}, title={entry.get("title", "N/A")}, link={entr
                     "Added new item: %s", item
                 )
                 
+            logger.info(
+                "Finished processing item, sleeping for %d seconds", settings["app"]["item"]["sleep"]
+            )
+            time.sleep(settings["app"]["item"]["sleep"])
+                
             
         sess.close()
 
