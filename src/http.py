@@ -54,7 +54,7 @@ def head_feed(url: str) -> None | Response:
         r: Response = requests.head(
             url=url, timeout=timeout
         )
-    except requests.exceptions.ReadTimeout as e:
+    except Exception as e:
         logger.error(
             "HEAD request to %s failed: %s",
             url,
