@@ -12,7 +12,7 @@ mode = "prod"
 sleep = 25
 
 [app.item]
-sleep = 5
+sleep = 1
 
 [http.get]
 timeout = 10
